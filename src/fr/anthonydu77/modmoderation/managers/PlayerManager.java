@@ -11,7 +11,7 @@ import org.bukkit.inventory.ItemStack;
 public class PlayerManager {
 
     private Player player;
-    private ItemStack[] items = new ItemStack[41];
+    private ItemStack[] items = new ItemStack[40];
 
     public PlayerManager(Player player) {
         this.player = player;
@@ -49,7 +49,6 @@ public class PlayerManager {
         items[37] = player.getInventory().getChestplate();
         items[38] = player.getInventory().getLeggings();
         items[39] = player.getInventory().getBoots();
-        items[40] = player.getInventory().getItemInOffHand();
 
         player.getInventory().clear();
     }
@@ -66,7 +65,6 @@ public class PlayerManager {
         player.getInventory().setChestplate(items[37]);
         player.getInventory().setLeggings(items[38]);
         player.getInventory().setBoots(items[39]);
-        player.getInventory().setItemInOffHand(items[40]);
         destroy();
     }
 }
