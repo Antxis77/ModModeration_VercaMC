@@ -1,5 +1,5 @@
-# Arkadia_ModModeration
-Plugin ModModeration pour le serveur Arkadia
+ModModeration
+Plugin ModModeration pour le serveur VersaMc
 
 ----- Config -----
 
